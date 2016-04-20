@@ -3,6 +3,8 @@
 export EDITOR=/usr/bin/vim
 export SHELL=/bin/bash
 export HUGINHOME=/usr/local/hugin
+export GOPATH=/home/gian/Documents/Projects/go
+export PATH=$GOPATH/bin:$PATH:/usr/local/go/bin
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
@@ -17,10 +19,14 @@ alias dsize='du -sh'
 alias make="make -j 4"
 alias open="gnome-open"
 
+# some useful work paths
+alias fuxr='cd /home/gian/work/thinox/build/rootfs/pkgs/fuxr/fuxr'
+
 # PS1 style
 function prompt {
     source /etc/bash_completion.d/git-prompt
-
+    source /etc/bash_completion.d/git-completion.bash
+    source /etc/bash_completion.d/ssh
     # 30m - Black
     # 31m - Red
     # 32m - Green
