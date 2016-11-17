@@ -1,0 +1,10 @@
+<application>
+  <component name="UpdatesConfigurable">
+    <knownUpdateChannels>
+      <item value="pycharm2016.1" />
+    </knownUpdateChannels>
+    <ignoredBuildNumbers>
+      <item value="143.2370" />
+    </ignoredBuildNumbers>
+  </component>
+</application>

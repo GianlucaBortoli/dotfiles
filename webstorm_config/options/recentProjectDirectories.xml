@@ -1,0 +1,42 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/work/praim-citrix-client" />
+        <option value="$USER_HOME$/work/kiosk" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/work/praim-citrix-client" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/work/praim-citrix-client" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/work/kiosk">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1478598276043" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/work/praim-citrix-client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1479368111068" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

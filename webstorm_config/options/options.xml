@@ -1,0 +1,34 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="evlsprt3.12" value="10" />
+    <property name="WebStorm.lineNumbersEnabled" value="true" />
+    <property name="WebStorm.dumbRunEnabled" value="true" />
+    <property name="installation.uid" value="25fa4612-d1ec-41b7-92c4-fd8bb3069e53" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="ignore.ibus.blocking.warn.message" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/work/praim-citrix-client/test&#10;/home/gian/work/praim-citrix-client&#10;/home/gian/work/agile-os-interface/index.js&#10;/home/gian/work/kiosk/webpack.config.js&#10;/home/gian/work/kiosk&#10;/home/gian/work/agile-log/log_manager.js&#10;/home/gian/work/kiosk/node_modules/.bin/electron" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="HbAutoCollapseBlocks" value="disabled" />
+    <property name="selected.color.option.type" value="ADDED_LINES_COLOR" />
+    <property name="fileTypeChangedCounter" value="2" />
+    <property name="disable.forced.soft.wraps.notification" value="true" />
+    <property name="evlsprt3.162" value="16" />
+    <property name="settings.code.style.selected.tab.JavaScript" value="Tabs and Indents" />
+    <property name="INSPECTION_FILTER_HISTORY" value="" />
+    <property name="MochaJavaScriptTestRunnerSupport.hidePassedTests" value="false" />
+    <property name="MochaJavaScriptTestRunnerSupport.hideIgnoredTests" value="true" />
+    <property name="MochaJavaScriptTestRunnerSupport.scrollToSource" value="true" />
+    <property name="MochaJavaScriptTestRunnerSupport.selectFirtsDefect" value="true" />
+    <property name="rerun.tests.notification.shown" value="true" />
+    <property name="PACKAGE_FILTER" value="mocha" />
+    <property name="HbDisableAutoGenerateCloseTag" value="enabled" />
+    <property name="HbAutocompleteMustaches" value="enabled" />
+    <property name="HbFormatter" value="enabled" />
+    <property name="HbCommenterLanguageId" value="HTML" />
+    <property name="js.rename.search.in.comments" value="true" />
+    <property name="js.rename.search.for.text.occurrences" value="false" />
+  </component>
+</application>
