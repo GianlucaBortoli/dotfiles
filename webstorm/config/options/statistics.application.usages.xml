@@ -1,0 +1,85 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="JavaScript versions">
+      <project id="praim-vmware-client" values="ECMAScript 6" collectionTime="1480938164867" />
+      <project id="kiosk" values="ECMAScript 6" collectionTime="1480957195601" />
+      <project id="praim-rdp-client" values="ECMAScript 6" collectionTime="1480957199221" />
+      <project id="praim-citrix-client" values="ECMAScript 6" collectionTime="1480937781185" />
+    </group>
+    <group name="module type">
+      <project id="praim-vmware-client" values="WEB_MODULE" collectionTime="1480938164864" />
+      <project id="kiosk" values="WEB_MODULE" collectionTime="1480957195592" />
+      <project id="praim-rdp-client" values="WEB_MODULE" collectionTime="1480957199213" />
+      <project id="praim-citrix-client" values="WEB_MODULE" collectionTime="1480937781180" />
+    </group>
+    <group name="vcs">
+      <project id="praim-vmware-client" values="Git" collectionTime="1480938164864" />
+      <project id="kiosk" values="Git" collectionTime="1480957195592" />
+      <project id="praim-rdp-client" values="Git" collectionTime="1480957199213" />
+      <project id="praim-citrix-client" values="Git" collectionTime="1480937781180" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="praim-vmware-client" values="data.commit.count.1+,data.git.root.count.1" collectionTime="1480938164867" />
+      <project id="kiosk" values="data.git.root.count.1,data.commit.count.100+" collectionTime="1480957195599" />
+      <project id="praim-rdp-client" values="data.git.root.count.1,data.commit.count.1+" collectionTime="1480957199219" />
+      <project id="praim-citrix-client" values="data.git.root.count.1,data.commit.count.1+" collectionTime="1480937781184" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="praim-vmware-client" values="mocha-javascript-test-runner" collectionTime="1480938164864" />
+      <project id="kiosk" values="js.build_tools.npm" collectionTime="1480957195592" />
+      <project id="praim-rdp-client" values="mocha-javascript-test-runner" collectionTime="1480957199214" />
+      <project id="praim-citrix-client" values="mocha-javascript-test-runner" collectionTime="1480937781180" />
+    </group>
+    <group name="file-type">
+      <project id="praim-vmware-client" values="PLAIN_TEXT,JavaScript,XML,Markdown,Images,Git file,JSON Schema" collectionTime="1480938164866" />
+      <project id="kiosk" values="PLAIN_TEXT,HTML,SCSS,Images,SourceMap,Git file,JSON,Markdown,UNKNOWN,XML,JavaScript,JSON Schema,CSS" collectionTime="1480957195598" />
+      <project id="praim-rdp-client" values="Markdown,Git file,JavaScript,JSON Schema" collectionTime="1480957199219" />
+      <project id="praim-citrix-client" values="XML,Git file,JavaScript,JSON Schema,Markdown" collectionTime="1480937781184" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="praim-vmware-client" values="Project,Project,Project,Project,Directory" collectionTime="1480938164867" />
+      <project id="kiosk" values="Directory,Project,Project,Project,Project,Project" collectionTime="1480957195601" />
+      <project id="praim-rdp-client" values="Directory,Project,Project,Project,Project" collectionTime="1480957199221" />
+      <project id="praim-citrix-client" values="Directory,Project,Project,Project,Project" collectionTime="1480937781185" />
+    </group>
+    <group name="Git">
+      <project id="praim-vmware-client" values="config.push.update.all.roots.enabled,data.remotes.in.project.1,data.remote.branches.count.1,data.local.branches.count.1,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled,config.save.policy.STASH,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.force.push.enabled" collectionTime="1480938164867" />
+      <project id="kiosk" values="config.cherry-pick.autocommit.disabled,config.ssh.enabled,config.repo.sync.NOT_DECIDED,config.force.push.enabled,data.local.branches.count.2+,config.push.autoupdate.disabled,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled,data.remotes.in.project.1,config.save.policy.STASH,data.remote.branches.count.5+" collectionTime="1480957195600" />
+      <project id="praim-rdp-client" values="config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.crlf.enabled,config.ssh.enabled,config.save.policy.STASH,data.remote.branches.count.1,config.repo.sync.NOT_DECIDED,data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,config.warn.about.detached.enabled,config.force.push.enabled,data.local.branches.count.1" collectionTime="1480957199220" />
+      <project id="praim-citrix-client" values="data.local.branches.count.1,data.remotes.in.project.1,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.cherry-pick.autocommit.disabled,config.ssh.enabled,data.remote.branches.count.1,config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,config.force.push.enabled" collectionTime="1480937781184" />
+    </group>
+    <group name="images.ide.background">
+      <project id="praim-vmware-client" values="frame=0,editor=0" collectionTime="1480938164867" />
+      <project id="kiosk" values="editor=0,frame=0" collectionTime="1480957195599" />
+      <project id="praim-rdp-client" values="frame=0,editor=0" collectionTime="1480957199220" />
+      <project id="praim-citrix-client" values="editor=0,frame=0" collectionTime="1480937781184" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="4" />
+      <entry feature="Npm.Packages.Install.Package.From.Package.Json" count="1" />
+      <entry feature="OpenInBrowser.Chrome" count="11" />
+      <entry feature="OpenInBrowser.Firefox" count="1" />
+      <entry feature="OpenInBrowser.Opera" count="1" />
+      <entry feature="execute.NodeJSConfigurationType.Debug" count="240" />
+      <entry feature="execute.NodeJSConfigurationType.Run" count="819" />
+      <entry feature="execute.js.build_tools.grunt.Run" count="1" />
+      <entry feature="execute.js.build_tools.npm.Debug" count="17" />
+      <entry feature="execute.js.build_tools.npm.Run" count="723" />
+      <entry feature="execute.mocha-javascript-test-runner.Debug" count="460" />
+      <entry feature="execute.mocha-javascript-test-runner.Run" count="213" />
+      <entry feature="ide.help.reference.VersionControl.Git.UpdateProject" count="1" />
+      <entry feature="ide.settings.Inspections" count="3" />
+      <entry feature="ide.settings.JSON" count="1" />
+      <entry feature="ide.settings.Libraries" count="4" />
+      <entry feature="ide.settings.Notifications" count="3" />
+      <entry feature="ide.settings.TODO" count="1" />
+      <entry feature="ide.settings.Web_Browsers" count="1" />
+      <entry feature="ideaapp.started" count="96" />
+      <entry feature="json.schema.builtin.completion" count="107" />
+      <entry feature="terminal.linux" count="8" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenDirectoryProject" count="1" />
+    </counts>
+  </component>
+</application>

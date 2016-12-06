@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/lib/jvm/java-8-oracle/jre/bin/java -Xmx750m -Djna.nosys=true -Djna.boot.library.path= -Djna.debug_load=true -Djna.debug_load.jna=true -classpath /tmp/jetbrains.patch.jar.pycharmcore_copy:/tmp/log4j.jar.PyCharmCore_copy:/tmp/jna.jar.PyCharmCore_copy:/tmp/jna-platform.jar.PyCharmCore_copy -Djava.io.tmpdir=/tmp -Didea.updater.log=/home/gian/.PyCharm50/system/log -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel com.intellij.updater.Runner install "/home/gian/Documents/pycharm-community-5.0.4"

@@ -1,0 +1,66 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/work/praim-rdp-client" />
+        <option value="$USER_HOME$/work/kiosk" />
+        <option value="$USER_HOME$/work/praim-vmware-client" />
+        <option value="$USER_HOME$/work/praim-citrix-client" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/work/praim-rdp-client" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/work/praim-rdp-client" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/work/kiosk">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1480938174766" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/work/praim-citrix-client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1480937613969" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/work/praim-rdp-client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1480957195602" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/work/praim-vmware-client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="WS-162.1812.21" />
+              <option name="productionCode" value="WS" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1480937781185" />
+              <option name="buildTimestamp" value="1472940000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
