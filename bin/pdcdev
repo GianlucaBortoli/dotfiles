@@ -1,0 +1,2 @@
+#!/bin/bash
+xfreerdp /v:pdcdev.dev.praim.com /u:administrator /p:praimdev /cert-ignore +clipboard /f

@@ -1,0 +1,2 @@
+#!/bin/bash
+xfreerdp /v:w10thinman /u:Admin /p:Admin /cert-ignore +clipboard

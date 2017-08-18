@@ -1,0 +1,2 @@
+#!/bin/bash
+xfreerdp /v:rdgpraim.praim.com /u:gianluca.bortoli /d:praim /cert-ignore +clipboard /f
