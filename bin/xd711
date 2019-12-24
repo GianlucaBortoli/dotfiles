@@ -1,2 +1,0 @@
-#!/bin/bash
-xfreerdp /v:xendesk711.dev.praim.com /u:administrator /p:praimdev /d:dev /cert-ignore +clipboard /f

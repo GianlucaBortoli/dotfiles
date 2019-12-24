@@ -1,9 +1,0 @@
-<application>
-  <component name="FileTypeManager" version="17">
-    <extensionMap>
-      <mapping pattern="desktop_icon_base64" type="PLAIN_TEXT" />
-      <mapping ext="node" type="PLAIN_TEXT" />
-      <mapping ext="rdp" type="PLAIN_TEXT" />
-    </extensionMap>
-  </component>
-</application>

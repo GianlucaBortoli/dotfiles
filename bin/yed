@@ -1,3 +1,0 @@
-#!/bin/sh
-
-java -jar /home/gian/Documents/yed-3.12.2/yed.jar "$@"

@@ -1,10 +1,10 @@
 [user]
-	name = GianlucaBortoli
-	email = giallogiallo93@gmail.com
+    name = GianlucaBortoli
+    email = giallogiallo93@gmail.com
 [push]
-	default = matching
-[grep]                                                                                                                           
-    linenumber = true 
+    default = matching
+[grep]
+    linenumber = true
 [color]
     ui = true
 [alias]
@@ -13,3 +13,4 @@
     lg = !"git lg1"
     s = status
     d = diff
+    co = checkout
