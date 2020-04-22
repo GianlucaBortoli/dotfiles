@@ -1,0 +1,94 @@
+prompt_order = [
+    "username",
+    "hostname",
+    "directory",
+    "git_branch",
+    "git_commit",
+    "git_state",
+    "kubernetes",
+    "line_break",
+    "character",
+]
+add_newline = false
+scan_timeout = 10
+
+[aws]
+disabled = true
+
+[battery]
+disabled = true
+
+[cmd_duration]
+disabled = true
+
+[conda]
+disabled = true
+
+[dotnet]
+disabled = true
+
+[elm]
+disabled = true
+
+[golang]
+disabled = true
+
+[haskell]
+disabled = true
+
+[hg_branch]
+disabled = true
+
+[jobs]
+disabled = true
+
+[nix_shell]
+disabled = true
+
+[java]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[crystal]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[php]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[terraform]
+disabled = true
+
+[directory]
+truncation_length = 5
+
+[kubernetes]
+disabled = false
+style = "bold green"
+prefix = "@"
+
+[character]
+use_symbol_for_status = true
+
+[git_branch]
+style = "bold blue"
+
+[git_status]
+disabled = true
+
