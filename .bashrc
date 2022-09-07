@@ -1,52 +1,80 @@
 [ -z "$PS1" ] && return
 
-export EDITOR=/usr/bin/vim
-export SHELL=/bin/bash
+export HISTCONTROL=ignorespace
+export FZF_DEFAULT_OPTS="--height=40% --layout=reverse"
 
-# Pretty-print of some PATH variables:
-alias path='echo -e ${PATH//:/\\n}'
-alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
+alias ll="ls -alh --color"
+alias k=kubectl
+alias grep="grep --color=always"
+alias make="make -j 8"
+# GovCloud
+alias aws-gov-fed="saml2aws login -a govcloud-us1-fed-human-readonly"
 
-alias mkdir='mkdir -p'
-alias ls='ls -h --color'
-alias ll='ls -alh --color'
-alias du='du -kh'    # Makes a more readable output.
-alias df='df -kTh'
-alias dsize='du -sh'
-alias make="make -j 4"
-alias open="gnome-open"
+complete -F __start_kubectl k
 
-# PS1 style
-function prompt {
-    source /etc/bash_completion.d/git-prompt
-    source /etc/bash_completion.d/git-completion.bash
-    source /etc/bash_completion.d/ssh
-    # 30m - Black
-    # 31m - Red
-    # 32m - Green
-    # 33m - Yellow
-    # 34m - Blue
-    # 35m - Purple
-    # 36m - Cyan
-    # 37m - White
-    # 0 - Normal
-    # 1 - Bold
-    local BLACK="\[\033[0;30m\]"
-    local BLACKBOLD="\[\033[1;30m\]"
-    local RED="\[\033[0;31m\]"
-    local REDBOLD="\[\033[1;31m\]"
-    local GREEN="\[\033[0;32m\]"
-    local GREENBOLD="\[\033[1;32m\]"
-    local YELLOW="\[\033[0;33m\]"
-    local YELLOWBOLD="\[\033[1;33m\]"
-    local BLUE="\[\033[0;34m\]"
-    local BLUEBOLD="\[\033[1;34m\]"
-    local PURPLE="\[\033[0;35m\]"
-    local PURPLEBOLD="\[\033[1;35m\]"
-    local CYAN="\[\033[0;36m\]"
-    local CYANBOLD="\[\033[1;36m\]"
-    local WHITE="\[\033[0;37m\]"
-    local WHITEBOLD="\[\033[1;37m\]"
-    export PS1="$WHITEBOLD\[\e(0\]l\[\e(B\] $YELLOW\@$WHITEBOLD $WHITE[$RED\u$WHITE@$GREEN\h$WHITE]\$(__git_ps1) $CYAN\w\n$WHITEBOLD\[\e(0\]m\[\e(B\]$WHITEBOLD> $WHITE"
+source /usr/local/opt/bash-completion/etc/bash_completion
+source <(kubectl completion bash)
+source /usr/local/opt/kube-ps1/share/kube-ps1.sh
+source /Users/gianluca.bortoli/.git-prompt.sh
+source /Users/gianluca.bortoli/.git-completion.bash
+source $HOME/.cargo/env
+
+export PATH=$PATH:~/bin
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:"/usr/local/lib/pkgconfig"
+export JAVA_HOME=$(/usr/libexec/java_home -v 15)
+export EDITOR=vim
+# Add volta to PATH
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+# Add ddr scripts to manage team staging branch
+export PATH="${HOME?}/go/src/github.com/DataDog/dd-go/scripts:${PATH?}"
+
+# BEGIN ANSIBLE MANAGED BLOCK
+# Add homebrew binaries to the path.
+export PATH="/usr/local/bin:${PATH?}"
+
+# Force certain more-secure behaviours from homebrew
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha
+
+# Load ruby shims
+eval "$(rbenv init -)"
+
+# Prefer GNU binaries to Macintosh binaries.
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
+
+# Add datadog devtools binaries to the PATH
+export PATH="${HOME?}/dd/devtools/bin:${PATH?}"
+
+# Point GOPATH to our go sources
+export GOPATH="${HOME?}/go"
+export GOBIN="${GOPATH}/bin"
+export PATH="${GOBIN}:${PATH}"
+
+# Point DATADOG_ROOT to ~/dd symlink
+export DATADOG_ROOT="${HOME?}/dd"
+
+# Tell the devenv vm to mount $GOPATH/src rather than just dd-go
+export MOUNT_ALL_GO_SRC=1
+
+# store key in the login keychain instead of aws-vault managing a hidden keychain
+export AWS_VAULT_KEYCHAIN_NAME=login
+
+# tweak session times so you don't have to re-enter passwords every 5min
+export AWS_SESSION_TTL=24h
+export AWS_ASSUME_ROLE_TTL=1h
+# END ANSIBLE MANAGED BLOCK
+
+function kt() {
+    kubectl exec -it -n sre $(kubectl get pod -n sre -l service="toolbox" --field-selector=status.phase=Running -o=jsonpath='{.items[0].metadata.name}') -- /bin/bash;
 }
-prompt
+# GovCloud
+function govfed() {
+    aws --profile govcloud-us1-fed-human-readonly --region=us-gov-west-1 -- $@
+}
+
+export PS1="$(starship prompt --status=$?)"
+eval "$(starship init bash)"
+. "$HOME/.cargo/env"

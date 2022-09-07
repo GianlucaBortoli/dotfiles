@@ -1,14 +1,13 @@
-prompt_order = [
-    "username",
-    "hostname",
-    "directory",
-    "git_branch",
-    "git_commit",
-    "git_state",
-    "kubernetes",
-    "line_break",
-    "character",
-]
+format = """\
+    $directory\
+    $git_branch\
+    $git_commit\
+    $git_state\
+    $kubernetes\
+    $line_break\
+    $character\
+"""
+
 add_newline = false
 scan_timeout = 10
 
@@ -31,9 +30,6 @@ disabled = true
 disabled = true
 
 [golang]
-disabled = true
-
-[haskell]
 disabled = true
 
 [hg_branch]
@@ -80,11 +76,10 @@ truncation_length = 5
 
 [kubernetes]
 disabled = false
-style = "bold green"
-prefix = "@"
+format = '[☸ $context \($namespace\)](bold green)'
 
 [character]
-use_symbol_for_status = true
+error_symbol = "[✖](bold red)"
 
 [git_branch]
 style = "bold blue"

@@ -1,16 +1,42 @@
 [user]
-    name = GianlucaBortoli
-    email = giallogiallo93@gmail.com
+	name = GianlucaBortoli
+	email = gianluca.bortoli@datadoghq.com
+	signingkey = 3006F6DFD8573B05B6F1218368C902DD75CD178F
 [push]
     default = matching
 [grep]
     linenumber = true
 [color]
-    ui = true
+	ui = true
 [alias]
     lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
     lg = !"git lg1"
     s = status
     d = diff
+    b = branch
     co = checkout
+    ddco = "!f() { git checkout -b gianluca/$1; }; f"
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[core]
+    pager = diff-so-fancy | less --tabs=4 -RFX
+	hooksPath = /usr/local/dd/global_hooks
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[tag]
+	forceSignAnnotated = true
+[gpg]
+	program = /usr/local/bin/yubinotif

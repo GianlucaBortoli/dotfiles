@@ -1,3 +1,18 @@
+"Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
+"Adding newline at end of file is default for vim
+
+"Set default tab width to 4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+"Expand tabs to spaces
+set expandtab
+
+"Show ruler at 100 character limit (change as needed)
+set colorcolumn=100
+
 set nocompatible              " be iMproved
 set t_Co=256                  " 256 colors
 
@@ -18,7 +33,7 @@ Plugin 'jmcantrell/vim-virtualenv'          " Virtual env
 Plugin 'MartinBrugnara/vim-golang'          " Go
 Plugin 'leafgarland/typescript-vim'
 Plugin 'tomasr/molokai'
-" Plugin 'lervag/vimtex'
+Plugin 'Lokaltog/powerline'
 
 call vundle#end()                   " END Bundle config. (required)
 filetype on
@@ -73,6 +88,7 @@ inoremap # #
 
 set incsearch           " While typing, the matched string is highlighted.
 set hlsearch            " highlight searched items.
+set ignorecase          " do case insensitive search
 
 let loaded_matchparen = 1
 set showmatch           " highlight corresponding bracket.
@@ -112,6 +128,21 @@ au BufRead,BufNewFile *.go set filetype=go          " know go
 au BufRead,BufNewFile *.js set filetype=javascript
 au BufRead,BufNewFile *.py set filetype=python
 
+
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
+if has("gui_running")
+   let s:uname = system("uname")
+   if s:uname == "Darwin\n"
+      set guifont=Inconsolata\ for\ Powerline:h15
+   endif
+endif
 
 let g:airline_powerline_fonts = 1
 let g:syntastic_check_on_open = 1
