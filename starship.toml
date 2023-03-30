@@ -5,8 +5,7 @@ format = """\
     $git_state\
     $kubernetes\
     $line_break\
-    $character\
-"""
+    $character"""
 
 add_newline = false
 scan_timeout = 10
@@ -83,7 +82,7 @@ error_symbol = "[✖](bold red)"
 
 [git_branch]
 style = "bold blue"
+format = "on [$branch]($style) "
 
 [git_status]
 disabled = true
-
